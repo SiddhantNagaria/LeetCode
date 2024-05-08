@@ -9,14 +9,12 @@ class Solution {
             curr = temp;
         }
         return prev;
-    }
-    
+    }  
     private ListNode doubleList(ListNode head){
         ListNode temp = head;
         ListNode prev = head;
         int carry = 0, sum;
- 
-        while (temp != null){
+         while (temp != null){
             sum = carry + (temp.val*2);
             carry = sum/10;
             sum = sum % 10;
@@ -29,7 +27,6 @@ class Solution {
         }
         return head;
     }
-
     public ListNode doubleIt(ListNode head) {
         head = reverseList(head);
         head = doubleList(head);
