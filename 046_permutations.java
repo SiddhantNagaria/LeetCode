@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
