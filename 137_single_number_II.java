@@ -1,3 +1,7 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
     public int singleNumber(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
