@@ -17,8 +17,8 @@ class Solution {
             ListNode curr = temp.next;
             ListNode next = temp.next.next;
             temp.next = next;
-            curr.next = nex.next;
-            nex.next = curr;
+            curr.next = next.next;
+            next.next = curr;
             temp = curr;
         }
 
