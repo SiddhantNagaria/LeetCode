@@ -13,7 +13,7 @@ class Solution {
                 } else {
                     ans.add(nums[start] + "->" + nums[end - 1]);
                 }
-                start = end;  // Update start to the new range
+                start = end;
             }
         }
         
