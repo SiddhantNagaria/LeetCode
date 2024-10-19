@@ -1,6 +1,5 @@
 class Solution {
-public:
-    char findKthBit(int n, int k) {
+    public char findKthBit(int n, int k) {
         // Base case: When n = 1, the binary string is "0"
         if (n == 1) return '0';
         
@@ -19,4 +18,4 @@ public:
         // If k is in the second half, find the bit in Sn-1 and invert it
         return findKthBit(n - 1, length - k + 1) == '0' ? '1' : '0';
     }
-};
+}
