@@ -16,3 +16,22 @@ class Solution {
         return arr;
     }
 }
+
+
+//////////
+
+
+class Solution {
+    public int[] arrayRankTransform(int[] arr) {
+        int[] ans = arr.clone();
+        Arrays.sort(arr);
+        Map<Integer, Integer> rank = new HashMap<>();
+        for (int i : arr) {
+            rank.putIfAbsent(i, rank.size() + 1);
+        }
+        for (int i = 0; i < ans.length; i++) {
+            ans[i] = rank.get(ans[i]);
+        }
+        return ans;
+    }
+} 
