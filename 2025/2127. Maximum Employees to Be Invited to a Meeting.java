@@ -44,7 +44,6 @@ public class Solution {
                     cycleSize++;
                     current = favorite[current];
                 }
-                
                 if (cycleSize == 2) {
                     // If it's a mutual pair, sum the two longest chains leading to them
                     sumChainPairs += (longestPath[i] + longestPath[favorite[i]] + 2);
@@ -53,7 +52,6 @@ public class Solution {
                 }
             }
         }
-
         return Math.max(maxCycleSize, sumChainPairs);
     }
 }
