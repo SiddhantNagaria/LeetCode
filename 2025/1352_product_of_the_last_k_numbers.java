@@ -1,6 +1,4 @@
-
 import java.util.ArrayList;
-
 class ProductOfNumbers {
     ArrayList<Integer> list = new ArrayList<>();
     int prod = 1;
